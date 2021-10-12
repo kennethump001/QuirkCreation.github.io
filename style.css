@@ -1,0 +1,45 @@
+body{
+    max-width: fit-content;
+    margin: auto;
+    padding: 10em;
+    background-color: rgb(42, 96, 59);
+}
+#main{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bolder;
+    font-size:x-large;
+}
+label{
+    padding: 15px;
+}
+
+.paper{
+    background: #fff;
+    padding: 30px;
+    position: relative;
+}
+.paper,.paper::before,.paper::after{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+}
+
+.paper::before, .paper::after{
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: #eee;
+}
+.paper::before{
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+}
+.paper::after{
+    top: 5px;
+    right: -5;
+    transform: rotate(1deg);
+    z-index: -2;
+}
